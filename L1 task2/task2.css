@@ -1,0 +1,177 @@
+html{scroll-behavior: smooth;}
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{background: #e67e22; font-family: 'Poppins', sans-serif;}
+header{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background:linear-gradient(rgba(0,0,0,0.7) 80%,#e67e22), url("potfolio.png");
+
+}
+header img{
+    width: 11rem;
+    height: 12rem;
+    border-radius: 50%;
+    
+    
+    
+}
+header i{
+    background: white;
+    color: black;
+    padding: 0.4rem;
+    margin: 1rem 0.2rem;
+    border-radius: 50%;
+    transition: 0.4s;
+
+}
+header i:hover{
+    background: #0a3d62;
+            color: white;
+            cursor: pointer;
+}
+
+
+
+header h3{
+    color: white;
+    margin: 1.5rem 0;
+    letter-spacing: 0,2;
+    font-size: 1.5rem;
+    padding-top: 23rem;
+   
+   
+
+}
+header p{
+    color: white;
+    
+    
+}
+
+
+.container{
+    width: 100%;
+    min-height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr 0.3fr 0.1fr;
+    gap: 1rem;
+    grid-template-areas: "aboutme aboutme skills skills"
+                         "edu edu edu Interests"
+                         "contact exp exp exp"
+                         "footer footer footer footer";
+                         padding: 2rem;
+}
+        .aboutme{
+            background: white;
+            color: black;
+            padding: 2rem;
+            grid-area: aboutme;
+        }
+        .skills{
+            background: -webkit-repeating-linear-gradient();
+            color: white;
+            padding: 2rem;
+            grid-area: skills;
+            
+        }
+        .edu{
+            background: firebrick;
+            color: white;
+            padding: 2rem;
+            grid-area: edu;
+        }
+        .Interests{
+            background: white;
+            color: #0a3d62;
+            padding: 2rem;
+            grid-area: Interests;
+        }
+        .contact{
+            background: white;
+            color: #0a3d62;
+            padding: 2rem;
+            grid-area: contact;
+        }
+        .exp{
+            background: burlywood;
+            color: black;
+            padding: 2rem;
+            grid-area: exp;
+        }
+        footer{
+            color: white;
+            background: gray;
+            padding: 2rem;
+            grid-area: footer;
+        }
+h2{
+    margin-bottom: 1rem;
+
+
+}
+.aboutme p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem;
+    
+}
+
+.skills div{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    color: black;
+    
+    
+}
+.skills div progress[value]{
+    width: 100%;
+    height: 1.3rem;
+    color: gray;
+}
+.edu h2{
+    letter-spacing: 0.1rem;
+}
+.edu p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem;
+}
+
+.Interests p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem;
+}
+.contact div i{
+    margin-left: 0.3rem;
+}
+.contact p{
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.exp p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem;
+    color: black;
+}
+.exp a{
+    text-decoration: none;
+    padding: 0.5rem 0.7 rem;
+    margin-left: 1rem;
+             background: burlywood;
+             color: black;
+}
+
+footer{
+    text-align: center;
+    
+}
+
+        
